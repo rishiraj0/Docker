@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
   subnet_id = aws_subnet.PublicSubnet.id
 
   tags = {
-    Name = "HelloWorld"
+    Name = "Docker-Instance"
   }
 
   user_data = file("script.sh")
