@@ -103,6 +103,6 @@ resource "aws_route_table_association" "PublicRTassociation" {
    route_table_id = aws_route_table.PublicRT.id
 }
 
-
-
-
+output "ec2_global_ips" {
+  value = ["${aws_instance.web.*.public_ip}"]
+}
