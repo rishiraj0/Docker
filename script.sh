@@ -8,7 +8,7 @@ sudo docker exec -it techserver /bin/bash -c "echo 'Hello, how are you?' > /var/
 sudo docker exec -it techserver /bin/bash -c "service apache2 start"
 sudo docker run -td --name myjenkins -p 8080:8080 jenkins/jenkins
 
-/*
+
 #! /bin/bash
 #sudo yum update -y
 #sudo yum install docker -y
